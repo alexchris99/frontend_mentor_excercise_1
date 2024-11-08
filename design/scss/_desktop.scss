@@ -1,0 +1,101 @@
+@import "generals";
+
+@media (min-width: $desktop){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        width: 100%;
+        height: 100%;
+        background-color: $ligth_pink;
+    }
+    header{
+        width: 100%;
+        height: 230px;
+        background-color: $dark_purple;
+        background-image: url(../../assets/images/background-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-size:auto;
+        background-position: center;
+    }
+    main{
+        margin: 0 auto;
+        padding: 1.2em;
+        margin-top: -5em;
+        background-color: $white;
+        max-width: 30em;
+        min-width: 30em;
+        height: auto;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        .header{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            margin-bottom: 1em;
+            padding: 0;
+
+            h1{
+                font-size: 3em;
+                padding-right: -200px;
+                font-weight: 900;
+            }
+            .image{
+                display: flex;
+                flex-direction: row;
+                width: 12%;
+                img{
+                    max-width: 60%;
+                    width: auto;
+                }
+            }
+        }
+
+        section{
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .container{
+                width: 100%;
+                padding: 1em 0;
+                display: flex;
+                flex-direction: row;
+                align-items:center ;
+                justify-content: space-between;
+                h4{
+                    font-weight: 600;
+                }
+                .desc{
+                    flex: 0 0 30px;
+                    height: 30px;
+                    background-image: url(../../assets/images/icon-plus.svg);
+                    border: none;
+                    &.active{  
+                    background-image: url(../../assets/images/icon-minus.svg);
+                    }
+                }
+            }
+            .accordion_content{
+                height: 0;
+                overflow: hidden;
+                width: 100%;
+                color: $grayish_purple;
+                padding: 0;
+                &.visible{
+                    height: 100%;
+                    overflow: auto;
+                    padding-left: .4em;
+                    padding-right: .4em;
+                    padding-bottom: 1em;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,19 @@
+*{
+    font-family: "Work Sans", serif;
+}
+
+// Devices
+$phone : 375px;
+$desktop: 1400px;
+
+// colors
+$white: hsl(0, 0%, 100%);
+$ligth_pink: hsl(275, 100%, 97%);
+$grayish_purple: hsl(292, 16%, 49%);
+$dark_purple: hsl(292, 42%, 14%);
+
+.attribution{
+    margin: 1em;
+}
+
+
